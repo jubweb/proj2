@@ -1,0 +1,170 @@
+/* Global declarations */
+
+:root {
+    --max-width: 1400px;
+    --primary-color: #164CFF;
+    --secondary-color: #00C9E9;
+    --light-gray: #F3F3F3;
+    --margin: 10%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color:white;
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+}
+
+/* Header */
+header {
+    font-size: 2em;
+    margin: 0 var(--margin);
+}
+
+li {
+    list-style: none;
+}
+
+header nav {
+    font-weight: 700;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header a:hover {
+    border: 1px solid white;
+    border-radius: 10px;
+    background: #333333;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+img {
+    width: 100%;
+}
+
+/* Sections */
+section {
+    
+}
+
+.c2action {
+    margin: 0px var(--margin);
+    position: relative;
+}
+
+.c2action span {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.c2action a {
+    box-shadow: 10px 10px 10px black;
+    font-size: 1.5em;
+    padding: 10px 30px;
+    background-color: #6E6E6E;
+    color: white;
+    margin: 300px auto;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#tarifs {
+    margin: 50px 0;
+    display: flex;
+}
+#left {
+    display: block;
+    
+    padding: 100px 10px;
+    width: 50%;
+    background-color: #171717;
+}
+
+#right {
+    display: block;
+    width: 50%;
+}
+
+#tarifs p {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+#line {
+    margin: 30px;
+    font-size: 29px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#line a {
+    color: white;
+}
+
+/* Footer */
+#footer {
+    background-color: #3E3E3E;
+    padding: 40px;
+    font-size: 29px;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 1100px ) {
+    
+    :root {
+         --margin: 3%;
+    }
+    
+    .gallery {
+        grid-gap: 30px
+    }
+}
+
+@media screen and (max-width: 900px ) {
+    
+    body {
+        background: radial-gradient(circle, rgba(148,176,254,1) 0%, rgba(22,76,255,1) 100%);
+    }
+    
+    header {
+        flex-direction: column;
+    }
+    
+    header ul {
+        font-size: 1.3em;
+    }
+    
+    #call2action {
+        display: block;
+    }
+    
+    #call2action .right {
+        display: none;
+    }
+    
+    #apropos {
+        flex-direction: column;
+    }
+    
+    .gallery {
+        display: block;
+    }
+    
+    footer ul {
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+}
